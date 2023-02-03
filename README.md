@@ -60,8 +60,41 @@ Verifica se a string começa com exatamente 5 dígitos, seguidos opcionalmente p
 
 * `WebApplication.CreateBuilder(args);` cria um objeto que é usado para configurar e construir um aplicativo web host. 
 
-* `Services.AddDbContext` usado para adicionar uma implementação do DbContext ao sistema de injeção de dependência (DI).
+* `Services.AddDbContext` adiciona uma implementação do DbContext ao sistema de injeção de dependência (DI).
 
-* `UseSqlite` usado para configurar o uso do provedor de banco de dados SQLite
+* `UseSqlite` configura o uso do provedor de banco de dados SQLite
 
-* `GetConnectionString` usado para obter uma string de conexão de um arquivo de configuração
+* `GetConnectionString` obtém uma string de conexão de um arquivo de configuração
+
+* `AddDatabaseDeveloperPageExceptionFilter` adiciona uma página de erro específica para desenvolvedores
+
+* `AddHttpClient` adiciona um cliente HTTP ao sistema de injeção de dependência (DI) 
+
+* `AddEndpointsApiExplorer` habilita a geração de documentação de API para endpoints 
+
+* `AddSwaggerGen` habilita a geração de documentação de API usando o Swagger
+
+* `Build` constrói um aplicativo web
+
+* `Environment.IsDevelopment()` retorna um bool indicando se a aplicação está sendo executada no ambiente de desenvolvimento. 
+
+* `using var` Comum quando se trabalha com conexões de banco de dados e outros recursos que precisam ser liberados explícitamente. 
+
+* `CreateScope` cria um escopo de serviço 
+
+* `ServiceProvider` fornece acesso aos serviços registrados no container de injeção de dependência. 
+
+* `GetRequiredService` obtém uma instância do objeto ClienteDb
+
+* `EnsureCreatedAsync` permite criar o banco de dados caso ele ainda não exista, sem a necessidade de scripts SQL 
+
+* `MigrateAsync` aplica as alterações de modelo ao banco de dados
+
+* `UseDeveloperExceptionPage` habilitar a página de exceção de desenvolvedor
+
+* `UseSwagger` habilita a documentação da API
+
+* `UseSwaggerUI` habilita a interface de usuário do Swagger 
+
+* `MapGroup` agrupa vários mapeamentos de rota para a mesma ação de controller
+
