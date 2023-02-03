@@ -98,3 +98,42 @@ Verifica se a string começa com exatamente 5 dígitos, seguidos opcionalmente p
 
 * `MapGroup` agrupa vários mapeamentos de rota para a mesma ação de controller
 
+
+![](./imagens/get.jpg)
+
+
+```http
+  GET http://localhost:5193/cliente/list
+```
+Retorna uma lista de clientes 
+
+```http
+  GET http://localhost:5193/cliente/{id}
+```
+Retorna um cliente buscado pela chave id
+
+```http
+  GET http://localhost:5193/cliente/nome
+```
+Retorna um cliente buscado pelo seu nome
+
+![](./imagens/post.jpg)
+
+```http
+  POST http://localhost:5193/cliente
+```
+Cria um cliente
+
+![](./imagens/put.jpg)
+
+```http
+  PUT http://localhost:5193/cliente/{id}
+```
+Altera um cliente
+
+![](./imagens/delete.jpg)
+
+```http
+  PUT http://localhost:5193/cliente/{id}
+```
+Deleta um cliente
