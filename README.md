@@ -3,12 +3,12 @@
 _Criação de uma API para realizar o cadastramento, consulta, exclusão, alteração, pesquisa e listagem de clientes._
 
 ## Arquitetura do projeto
-![](./arquitetura.jpg)
+![](./imagens/arquitetura.jpg)
 
 ## Explicando as classes do projeto
 
 ### ClienteDb
-![](./clienteDb.jpg)
+![](./imagens/clienteDb.jpg)
 
 Nessa classe, foi criado as tabelas do banco de dados, junto ao método `OnModelCreating`, responsável por configurar o modelo de dados antes dele ser usado para criar o banco de dados. 
 
@@ -21,7 +21,7 @@ Como parâmetro, foi utilizado o objeto `ModelBuilder` para configurar as propri
 
 ### DTOs
 
-![](./DTOs.jpeg)
+![](./imagens/DTOs.jpeg)
 
 Usado para transferir dados entre camadas de uma aplicação. 
 Nas classes DTOs foram implementados os mesmos campos pertencentes as classes de models. Foi adicionado a alguns campos as propriedades `Required`. Para a propriedade Cep, foi adicionado uma `RegularExpression` 
@@ -33,7 +33,7 @@ Verifica se a string começa com exatamente 5 dígitos, seguidos opcionalmente p
 
 ### Mappers
 
-![](./mapper.jpg)
+![](./imagens/mapper.jpg)
 
 * `[Mapper(EnumMappingStrategy = EnumMappingStrategy.ByName)]` indica a estratégia de mapeamento de enumerações a ser usada em uma biblioteca de mapeamento automático. 
 
@@ -41,12 +41,12 @@ Verifica se a string começa com exatamente 5 dígitos, seguidos opcionalmente p
 
 ### Models
 
-![](./models.jpeg)
+![](./imagens/models.jpeg)
 
 * `[DatabaseGenerated(DatabaseGeneratedOption.Identity)]` indica que a entidade deve ser gerada automaticamente pelo banco de dados como uma chave primária auto-incrementante.
 
 ### EnderecoCep e ViaCEPService
 
-![](./enderecoCep.jpg)
-![](./viaCep.jpg)
+![](./imagens/enderecoCep.jpg)
+![](./imagens/viaCep.jpg)
 
