@@ -50,3 +50,18 @@ Verifica se a string começa com exatamente 5 dígitos, seguidos opcionalmente p
 ![](./imagens/enderecoCep.jpg)
 ![](./imagens/viaCep.jpg)
 
+* `EnsureSuccessStatusCode` usado para verificar se uma resposta HTTP retornou com sucesso 
+
+* `ReadAsStringAsync` usado para ler o conteúdo de uma resposta HTTP como uma string.
+
+### Program
+
+![](./imagens/builder.jpg)
+
+* `WebApplication.CreateBuilder(args);` cria um objeto que é usado para configurar e construir um aplicativo web host. 
+
+* `Services.AddDbContext` usado para adicionar uma implementação do DbContext ao sistema de injeção de dependência (DI).
+
+* `UseSqlite` usado para configurar o uso do provedor de banco de dados SQLite
+
+* `GetConnectionString` usado para obter uma string de conexão de um arquivo de configuração
