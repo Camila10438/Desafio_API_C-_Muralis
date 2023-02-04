@@ -125,7 +125,40 @@ Cria um cliente
 ```http
   POST http://localhost:5193/cliente
 ```
+```
+ 
+{
+  "nome": "camila",
+  "dataCadastro": "2023-02-02T14:03:40.819Z",
+  "contatos": [
+    {
+      "tipo": "email",
+      "texto": "camila10438@gmail.com"
+    }
+  ],
+  "endereco": {
+    "cep": "13140330",
+    "numero": "383"
+  }
+}
 
+{
+  "nome": "josé",
+  "dataCadastro": "2023-02-02T14:03:40.819Z",
+  "contatos": [
+    {
+      "tipo": "telefone",
+      "texto": "19912345678"
+    }
+  ],
+  "endereco": {
+    "cep": "13010002",
+    "numero": "50"
+  }
+}
+
+
+```
 
 
 ![](./imagens/put.jpg)
@@ -143,4 +176,3 @@ Deleta um cliente
 ```http
   PUT http://localhost:5193/cliente/{id}
 ```
-
